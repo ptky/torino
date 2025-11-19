@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(238, 231, 224);
+}
+
+header img{
+    border-radius: 20px;
+    max-width: 100%; 
+    height: auto;    
+    display: block;
+    margin: auto;
+}
+
+ header h1{ 
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+section img{
+    border-radius: 20px;
+    max-width: 200px; 
+    height: auto;    
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: bold;
+
+}
+
+section p{
+
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+article{
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; 
+    padding: 20px 0;
+}
