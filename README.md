@@ -6,8 +6,5 @@ Rácz Brigitta
 Nagy Gergely
 Süveges Levente Bendegúz
 
-<<<<<<< HEAD
 https://www.figma.com/design/dMhMzNdKEtTfLg2DFtx7VR/Kedves-Torin%C3%B3?node-id=0-1&t=0ixMdlCHFVaNQ29w-1
-=======
 https://www.figma.com/design/DVlHbxUWyBCxi3LJejGUPE/Torino?node-id=8-15&t=Wb6nyR3WStnZGSVe-1
->>>>>>> 3665929441a74073fbfea0aa2d71c235079b2771
