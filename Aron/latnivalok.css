@@ -69,11 +69,20 @@ a{
 }
 
 nav{
+    position: sticky;
+    background-color: rgb(238, 231, 224, 0.97);
+    padding: 10px;
+    border-radius: 10px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
     text-align: justify;
     margin: 20px 0;
 }
 
 nav a {
+
     color: rgb(137, 137, 137);
     font-weight: bold;
     text-decoration: none;
