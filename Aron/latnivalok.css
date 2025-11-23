@@ -110,3 +110,35 @@ article{
     max-width: 1300px; 
     left: 0;
 }
+
+@media (min-width: 576px) {
+    
+
+    nav {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+    nav a {
+        max-width: none; 
+    }
+
+
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    body {
+        max-width: 1100px;
+    }
+    
+
+    article {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
