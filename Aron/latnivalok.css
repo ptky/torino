@@ -121,4 +121,9 @@ article{
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    section img {
+        margin: 0 auto;      
+        display: block;
+    }
 }
