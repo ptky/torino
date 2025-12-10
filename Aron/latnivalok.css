@@ -6,10 +6,16 @@ body {
     font-family: 'Outfit', sans-serif;
     text-align: center;
     width: 100%;
-    max-width: 900px;
     margin: auto;
-    background-color: rgb(238, 231, 224);
+    background-color: rgb(255, 255, 255);
 }
+
+main {
+    width: 1200px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
 
 section h2{
     font-weight: 6;
