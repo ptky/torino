@@ -82,12 +82,13 @@ a{
 
 nav{
     position: sticky;
-    background-color: rgb(238, 231, 224, 0.97);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: justify;
+    font-weight: 20px;
     text-align: justify;
     margin: 20px 0;
 }
