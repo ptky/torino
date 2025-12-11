@@ -14,6 +14,16 @@ main {
     width: 1200px;
     margin: auto;
     background-color: aliceblue;
+    padding-left: 100px; padding-right: 100px;
+    display: grid;
+
+    grid-template-areas:
+        "n n n"
+        "h h h"
+        "ar ar ar";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 
@@ -36,6 +46,11 @@ section h2{
     width: 100%;
     display: grid; 
     place-items: center;
+}
+
+header{
+    grid-area: h;
+    position: relative;
 }
 
  header h1{ 
@@ -81,6 +96,7 @@ a{
 }
 
 nav{
+    grid-area: n;
     position: sticky;
     background-color: rgb(255, 255, 255);
     padding: 10px;
@@ -112,6 +128,7 @@ nav a:hover{
 }
 
 article{
+    grid-area: ar;
     display: grid; 
     grid-template-columns: repeat(5, 1fr);
     margin: 0 auto ;
