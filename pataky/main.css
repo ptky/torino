@@ -109,3 +109,100 @@ aside {
 
 
 }
+
+@media screen and (max-width: 850px) 
+{
+    #kepek {
+        grid-template-columns: 1fr;
+        width: 60%;
+        margin: auto;
+    }
+    main {
+        grid-template-areas:
+        "n n n"
+        "h h h"
+        "y y y"
+        "as as as"
+        "k k k";
+    }
+    aside {
+        text-align: center;
+        font-size: 30px;
+        width: 500px;
+    }
+    #yipyap1 {
+        text-align: center;
+    }
+    p {
+        width: 1200px;
+        font-size: 30px;
+    }
+
+    #info {
+        font-size: 50px;
+        border: 2px solid black;
+        padding: 20px 30px;
+    }
+    h2 {
+    font-size: 40px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .navig {
+        font-size: 40px;
+    }
+    #kepek {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+    }
+    aside {
+        text-align: center;
+        font-size: 40px;
+        width: 500px;
+    }
+    #yipyap1 {
+        text-align: center;
+    }
+    p {
+        width: 1200px;
+        font-size: 40px;
+    }
+       h2 {
+    font-size: 55px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navig {
+        font-size: 55px;
+    }
+    #kepek {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+    }
+    aside {
+        text-align: center;
+        font-size: 55px;
+        width: 600px;
+    }
+    #yipyap1 {
+        text-align: center;
+    }
+    p {
+        width: 1200px;
+        font-size: 55px;
+    }
+       h2 {
+    font-size: 70px;
+}
+}
+@media screen and (max-width: 350px) {
+    body {
+        display: none;
+    }
+}
