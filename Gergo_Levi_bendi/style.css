@@ -1,108 +1,105 @@
-* {
-    box-sizing: border-box;
+body, main, p, a, h2, nav {
+    font-family: 'Outfit', sans-serif;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f3f3;
+main {
+    background-color: aliceblue;
+    margin: auto;
+    width: 1200px;
+    border-radius: 5%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-areas:
+        "n n n"
+        "h h h"
+        "y y y"
+        "k k k";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
-.oldal {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 20px 24px 40px;
-    background-color: #ffffff;
-    border-radius: 32px;
+nav {
+    grid-area: n;
+    padding: 10px;
 }
 
-/* NAV – három kis gomb */
-.nav {
-    display: grid;                  /* csak grid */
-    grid-auto-flow: column;
-    column-gap: 8px;
-    justify-content: start;
-    margin-bottom: 16px;
-}
-
-.nav a {
+.navig {
     text-decoration: none;
-    font-size: 14px;
-    color: #222222;
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid #dddddd;
-    background-color: #ffffff;
+    color: rgb(32, 57, 85);
+    font-weight: 500;
+    font-size: 24px;
+    padding-right: 20px;
 }
 
-/* HERO – háttérkép + felirat */
-.hero {
-    height: 230px;
-    border-radius: 32px;
-    background-image: url("basilica-di-superga-la-basilica_1744926252_95.jpg");  
-    background-size: cover;
-    background-position: center;
-    display: grid;                  
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 24px;
+header {
+    grid-area: h;
+    position: relative;
 }
 
-.hero h1 {
-    color: #ffffff;
+img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+header h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-shadow: 0 0 10px black;
+    white-space: nowrap;
+}
+
+#yipyap1 {
+    grid-area: y;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 800;
     font-size: 32px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-    margin: 0;
-}
-.tartalom {
-    display: grid;                 
-    grid-template-columns: 2fr 1fr;
-    column-gap: 40px;
-    margin-bottom: 18px;
 }
 
-.szoveg h2 {
-    margin-top: 0;
-    font-size: 22px;
+p {
+    font-size: 20px;
 }
 
-.szoveg p {
-    font-size: 15px;
-    line-height: 1.5;
+aside {
+    grid-area: as;
+    padding: 10px;
+    margin: auto;
 }
 
-.gombdoboz {
-    display: grid;              
-    align-items: start;
-    justify-items: center;
-}
-
-.gomb {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 999px;
-    border: 1px solid #000000;
+#info {
+    font-weight: 400;
+    color: black;
     text-decoration: none;
-    color: #000000;
-    font-size: 14px;
-    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 30px;
 }
 
-
-.galeria {
-    display: grid;         
+#kepek {
+    grid-area: k;
+    display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 16px;
+    padding: 20px;
 }
 
 .kep {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 18px;
+    border-radius: 50px;
 }
 
 .kep1 {
@@ -123,24 +120,4 @@ body {
 .kep4 {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
-}
-
-@media (max-width: 800px) {
-    .tartalom {
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-    }
-
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-    }
-
-    .kep1,
-    .kep2,
-    .kep3,
-    .kep4 {
-        grid-column: auto;
-        grid-row: auto;
-    }
 }
