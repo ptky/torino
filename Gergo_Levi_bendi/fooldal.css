@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    background-color: aliceblue;
+    padding-left: 100px; padding-right: 100px;
+    display: grid;
+
+    grid-template-areas:
+        "n n n"
+        "h h h"
+        "ar ar ar";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+section h2{
+    font-weight: 6;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+.kep-kontener {
+
+    background-image: url('kepek/Torino1.webp');
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; 
+    width: 100%;
+    display: grid; 
+    place-items: center;
+}
+
+header{
+    grid-area: h;
+    position: relative;
+}   
+
+header h1{ 
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 2.5em;
+     color: black;
+
+}
+section{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e3dcd7;
+    border-radius: 15px;
+}
+section p{
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #bdbcbc;
+}
+
+section img{
+    border-radius: 20px;
+    max-width: 200px; 
+    height: auto;    
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+section img:hover{
+    border-radius: 20px;
+    max-width: 200px; 
+    height: auto;    
+    display: block;
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    grid-area: n;
+    position: sticky;
+    background-color: aliceblue;
+    padding: 10px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: justify;
+    font-weight: 20px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+nav a {
+
+    color: rgb(137, 137, 137);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+
+}
+
+nav a:hover{
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+    border-radius: 10px;
+}
+
+article{
+    grid-area: ar;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    article{
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 100%;
+        padding-left: 20px; padding-right: 20px;
+    }
+
+    section img {
+        margin: 0 auto;      
+        display: block;
+    }
+}
